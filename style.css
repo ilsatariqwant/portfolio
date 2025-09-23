@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body{ 
+    background: #080808; 
+    color: #fff; 
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+
+    background: 
+        url(images/pixel-art-12601_256.gif),
+        radial-gradient(circle 200px at calc(100% - 150px) center,
+                        rgba(161, 0, 255, 0.5), 
+                        transparent 100%);
+
+    background-repeat: no-repeat, no-repeat;
+    background-size: 25% auto, cover;  /* gif size, gradient covers */
+    background-position: calc(100% - 150px) center, calc(100% - 150px) center;
+}
+
+.container{
+    margin-bottom: 100px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    background-color: #1A0B2E;
+    padding-left: 40px;
+}
+
+.logo{
+    width: 90px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    background-color: #A100FF;
+}
+.header-text{
+    padding: 20px 10%;
+    margin-top: 20px;
+    font-size: 25px;
+    font-style: italic;
+}
+.header-text h1{
+    font-size: 50px;
+    font-style: normal;
+    margin-top: 10%;
+    color: #A100FF;
+    margin-bottom: 15px;
+}
+.header-text p{
+    margin-bottom: 50px;
+}
+.btn{
+    background-color: #A100FF;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* ------------about------------ */
+.container1{
+    padding: 20px 10%;
+}
+#About{
+    padding: 40px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;                   /* space below text */
+    width: 0;
+    height: 2px;
+    background: #A100FF;            /* your purple color */
+    transition: width 0.3s ease;
+}
+.tab-links:hover::after{
+    width: 100%;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-content-col-1{
+    flex-basis: 40%;
+}
+.tab-content-col-2{
+    flex-basis: 50%;
+}
+.tab-contents ul li{
+    margin: 10px;
+}
+.tab-contents h3{
+    color: #B039F5;
+}
+.tab-contents h4{
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 10px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* --------projects-------- */
+#projects{
+    padding: 40px 0;
+}
+.project-1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.project-description{
+    flex-basis: 65%;
+}
+.project-image{
+    flex-basis: 25%;
+}
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.project-description h2{
+    color: #A100FF;
+}
+.project-description h4{
+    font-style: italic;
+    font-weight: 500;
+}
+.project-description p{
+    margin-top: 10px;
+}
+
+.project-2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.project-3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+/* ----------contact----------- */
+#contact{
+    padding: 40px 0;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row2 a {
+  color: #A100FF;         /* purple text */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.row2 a:hover {
+  color: #FF6F61;         /* hover color */
+  border-bottom: 2px solid #FF6F61;  /* underline effect */
+}
+
+
+.row2 h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

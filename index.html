@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Ilsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ILSA.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>ILSA TARIQ WANT</h1>
+                <p>Software Engineer</p>
+                <a href="#projects">
+                    <button class="btn">Projects</button>
+                </a>
+                <a href="#contact">
+                    <button class="btn">Contact</button>
+                </a>
+
+            </div>
+        </div>
+        <!-- ------------about------------- -->
+        <div id="About">
+            <div class="container1">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/ilsaimage.jpg">
+                        <a href="images/Ilsa_CV[1].pdf" download>
+                            <button class="btn">Download CV</button>
+                        </a>
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Motivated and detail-oriented final-year Software Engineering student at the University of
+                            Malaya, with a strong foundation in programming, software design, and teamwork. Eager
+                            to contribute to real-world projects and continuously improve through hands-on
+                            experience.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('relevant-courses')">Relevant Courses</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <div class="tab-content-col-1">
+                                <h3>Languages</h3>
+                                <ul>
+                                    <li>Java<br></li>
+                                    <li>Python<br></li>
+                                    <li>HTML, CSS, JavaScript<br></li>
+                                    <li>SQL<br></li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-col-2">
+                                <h3>Technologies & Tools</h3>
+                                <ul>
+                                    <li>Git & Github<br></li>
+                                    <li>Firebase<br></li>
+                                    <li>Streamlit<br></li>
+                                    <li>VS Code<br></li>
+                                    <li>Android Studio<br></li>
+                                    <li>Google Colab<br></li>
+                                    <li>Figma<br></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="relevant-courses">
+                            <div class="tab-content-col">
+                                <ul>
+                                    <li>Object-Oriented Programming<br></li>
+                                    <li>Mobile Application Development<br></li>
+                                    <li>Data Structures and Algorithms<br></li>
+                                    <li>Machine Learning<br></li>
+                                    <li>Python for Scientific Computing<br></li>
+                                    <li>Network Technology Foundation<br></li>
+                                    <li>Database<br></li>
+                                    <li>Software Modeling<br></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <div class="tab-content-col">
+                                <h3>Unversiti Malaya</h3>
+                                <h4>Bachelor in Computer Science (Software Engineering)</h4>
+                                <ul>
+                                    <li>Sep 2023 - Present<br></li>
+                                    <li>CGPA 3.63 / 4.00<br></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------projects---------- -->
+        <div id="projects">
+            <div class="container1">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="project-1">
+                    <div class="project-description">
+                        <h2>Mobile Application - Farmer Pal</h2>
+                        <h4>Java, Android Studio</h4>
+                        <p>
+                            I developed a smart farming mobile application aimed at addressing
+                            <b>SDG 2: Zero Hunger</b>, designed to support farmers in improving
+                            agricultural productivity and sustainability.
+                            The app integrates key modules such as
+                            <b>weather updates, soil health analysis, pest detection,
+                                an AI-powered chatbot, and community interaction</b>.
+                            Notably, I implemented the chatbot using <b>JAM AI and Retrofit</b>,
+                            enabling it to provide <b>personalized planting advice</b> tailored
+                            to specific environmental conditions.
+                        </p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/farmerPal.png">
+                    </div>
+                </div>
+
+                <div class="project-2">
+                    <div class="project-image">
+                        <img src="images/farmerPal.png">
+                    </div>
+                    <div class="project-description">
+                        <h2>Pokémon-Inspired Battle Game</h2>
+                        <h4>Java</h4>
+                        <p>
+                            I designed and developed a turn-based Pokémon-style game in Java that features battle
+                            mechanics, character stats, and evolution logic. The game applies object-oriented
+                            programming principles such as inheritance, encapsulation, and polymorphism to effectively
+                            model creatures, moves, and battle systems.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-3">
+                    <div class="project-description">
+                        <h2>MemeCoin Dashboard</h2>
+                        <h4>Python, Streamlit, Pandas, Plotly</h4>
+                        <p>
+                            I built an interactive MemeCoin Dashboard using Python and Streamlit that features real-time
+                            memecoin data, sentiment analysis, and dynamic visualizations. Leveraging Plotly and
+                            Streamlit, the dashboard presents price trends, trading volume, and market depth through
+                            interactive charts for an engaging user experience.
+
+                        </p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/farmerPal.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ---------Contact---------- -->
+         <div id="contact">
+            <div class="container1">
+                <h1 class="sub-title">Contact</h1>
+                <div class="row2">
+                    <div class="col-1">
+                        <h3>You can reach me through:</h3>
+                        <p>
+                            📧 <a href="mailto:ilsatariq@example.com">ilsatariq@example.com</a><br>
+                            📞 <a href="tel:+60123456789">+60 12-345 6789</a><br>
+                            🌐 <a href="https://www.linkedin.com/in/ilsa-want" target="_blank">LinkedIn</a> | 
+                            <a href="https://github.com/ilsatariqwant" target="_blank">GitHub</a>
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <h3>Address</h3>
+                        <p>Pantai Panorama Condominium <br>Bangsar South, 59200 Kuala Lumpur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                // hides content when tablink is clicked
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link")
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab")
+                }
+                // diaplays content and underline
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+</body>
+
+</html>
