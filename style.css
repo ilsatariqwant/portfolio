@@ -9,7 +9,8 @@ html {
 }
 
 body{ 
-    background: #080808; 
+    /* background: #080808;  */
+    background: #fff;
     color: #fff; 
 }
 
@@ -189,6 +190,14 @@ nav ul li a:hover{
 .project-description{
     flex-basis: 65%;
 }
+.glass {
+  background: rgba(255, 255, 255, 0.1); /* translucent white */
+  backdrop-filter: blur(8px);           /* blur background behind */
+  -webkit-backdrop-filter: blur(8px);   /* Safari support */
+  border-radius: 12px;                  /* rounded corners */
+  padding: 15px 20px;                   /* spacing inside */
+}
+
 .project-image{
     flex-basis: 25%;
 }
@@ -202,6 +211,7 @@ nav ul li a:hover{
 .project-description h4{
     font-style: italic;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 .project-description p{
     margin-top: 10px;
