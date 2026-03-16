@@ -2,210 +2,237 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website - Ilsa</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ilsa Tariq Want | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/ILSA.png" class="logo">
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#About">About me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <h1>ILSA TARIQ WANT</h1>
-                <p>Software Engineer</p>
-                <a href="#projects">
-                    <button class="btn">Projects</button>
-                </a>
-                <a href="#contact">
-                    <button class="btn">Contact</button>
-                </a>
 
-            </div>
-        </div>
-        <!-- ------------about------------- -->
-        <div id="About">
-            <div class="container1">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/ilsaimage.jpg">
-                        <a href="images/Ilsa_CV[1].pdf" download>
-                            <button class="btn">Download CV</button>
-                        </a>
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>Motivated and detail-oriented final-year Software Engineering student at the University of
-                            Malaya, with a strong foundation in programming, software design, and teamwork. Eager
-                            to contribute to real-world projects and continuously improve through hands-on
-                            experience.</p>
+<!-- NAVBAR -->
 
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('relevant-courses')">Relevant Courses</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <div class="tab-content-col-1">
-                                <h3>Languages</h3>
-                                <ul>
-                                    <li>Java<br></li>
-                                    <li>Python<br></li>
-                                    <li>HTML, CSS, JavaScript<br></li>
-                                    <li>SQL<br></li>
-                                </ul>
-                            </div>
-                            <div class="tab-content-col-2">
-                                <h3>Technologies & Tools</h3>
-                                <ul>
-                                    <li>Git & Github<br></li>
-                                    <li>Firebase<br></li>
-                                    <li>Streamlit<br></li>
-                                    <li>VS Code<br></li>
-                                    <li>Android Studio<br></li>
-                                    <li>Google Colab<br></li>
-                                    <li>Figma<br></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-contents" id="relevant-courses">
-                            <div class="tab-content-col">
-                                <ul>
-                                    <li>Object-Oriented Programming<br></li>
-                                    <li>Mobile Application Development<br></li>
-                                    <li>Data Structures and Algorithms<br></li>
-                                    <li>Machine Learning<br></li>
-                                    <li>Python for Scientific Computing<br></li>
-                                    <li>Network Technology Foundation<br></li>
-                                    <li>Database<br></li>
-                                    <li>Software Modeling<br></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <div class="tab-content-col">
-                                <h3>Unversiti Malaya</h3>
-                                <h4>Bachelor in Computer Science (Software Engineering)</h4>
-                                <ul>
-                                    <li>Sep 2023 - Present<br></li>
-                                    <li>CGPA 3.63 / 4.00<br></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ---------projects---------- -->
-        <div id="projects">
-            <div class="container1">
-                <h1 class="sub-title">My Projects</h1>
-                <div class="project-1">
-                    <div class="project-description">
-                        <h2>Mobile Application - Farmer Pal</h2>
-                        <h4>Java, Android Studio</h4>
-                        <p>
-                            I developed a smart farming mobile application aimed at addressing
-                            <b>SDG 2: Zero Hunger</b>, designed to support farmers in improving
-                            agricultural productivity and sustainability.
-                            The app integrates key modules such as
-                            <b>weather updates, soil health analysis, pest detection,
-                                an AI-powered chatbot, and community interaction</b>.
-                            Notably, I implemented the chatbot using <b>JAM AI and Retrofit</b>,
-                            enabling it to provide <b>personalized planting advice</b> tailored
-                            to specific environmental conditions.
-                        </p>
-                    </div>
-                    <div class="project-image">
-                        <img src="images/farmerPal.png">
-                    </div>
-                </div>
+<nav>
+<h2 class="logo">ILSA</h2>
 
-                <div class="project-2">
-                    <div class="project-image">
-                        <img src="images/farmerPal.png">
-                    </div>
-                    <div class="project-description">
-                        <h2>Pokémon-Inspired Battle Game</h2>
-                        <h4>Java</h4>
-                        <p>
-                            I designed and developed a turn-based Pokémon-style game in Java that features battle
-                            mechanics, character stats, and evolution logic. The game applies object-oriented
-                            programming principles such as inheritance, encapsulation, and polymorphism to effectively
-                            model creatures, moves, and battle systems.
-                        </p>
-                    </div>
-                </div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#tech">Tech</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-                <div class="project-3">
-                    <div class="project-description">
-                        <h2>MemeCoin Dashboard</h2>
-                        <h4>Python, Streamlit, Pandas, Plotly</h4>
-                        <p>
-                            I built an interactive MemeCoin Dashboard using Python and Streamlit that features real-time
-                            memecoin data, sentiment analysis, and dynamic visualizations. Leveraging Plotly and
-                            Streamlit, the dashboard presents price trends, trading volume, and market depth through
-                            interactive charts for an engaging user experience.
+</nav>
 
-                        </p>
-                    </div>
-                    <div class="project-image">
-                        <img src="images/farmerPal.png">
-                    </div>
-                </div>
+<!-- HERO -->
 
-            </div>
-        </div>
-        <!-- ---------Contact---------- -->
-         <div id="contact">
-            <div class="container1">
-                <h1 class="sub-title">Contact</h1>
-                <div class="row2">
-                    <div class="col-1">
-                        <h3>You can reach me through:</h3>
-                        <p>
-                            📧 <a href="mailto:ilsatariq@example.com">ilsatariq@example.com</a><br>
-                            📞 <a href="tel:+60123456789">+60 12-345 6789</a><br>
-                            🌐 <a href="https://www.linkedin.com/in/ilsa-want" target="_blank">LinkedIn</a> | 
-                            <a href="https://github.com/ilsatariqwant" target="_blank">GitHub</a>
-                        </p>
-                    </div>
-                    <div class="col-2">
-                        <h3>Address</h3>
-                        <p>Pantai Panorama Condominium <br>Bangsar South, 59200 Kuala Lumpur</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section id="home" class="hero">
 
-        <script>
+<div class="hero-container">
 
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
+<h1>Hi, I'm <span>Ilsa Tariq Want</span></h1>
 
-            function opentab(tabname) {
-                // hides content when tablink is clicked
-                for (tablink of tablinks) {
-                    tablink.classList.remove("active-link")
-                }
-                for (tabcontent of tabcontents) {
-                    tabcontent.classList.remove("active-tab")
-                }
-                // diaplays content and underline
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
+<p>
+Computer Science student at Universiti Malaya building
+mobile apps, dashboards, and interactive systems.
+</p>
 
-        </script>
+<div class="hero-buttons">
+
+<a href="#projects" class="btn-primary">View Projects</a>
+
+<a href="files/Ilsa_CV.pdf" download class="btn-secondary">Download CV</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+<img src="images/ilsaimage.jpg" class="about-img">
+
+<div>
+
+<h2>About Me</h2>
+
+<p>
+
+I am a Computer Science student passionate about software development,
+UI/UX design, and building applications that solve real problems.
+
+I enjoy developing mobile apps, dashboards, and intelligent systems
+that combine design with functionality.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TECH STACK -->
+
+<section id="tech">
+
+<div class="container">
+
+<h2 class="section-title">Tech Stack</h2>
+
+<div class="tech-grid">
+
+<div class="tech-card">Java</div>
+<div class="tech-card">Python</div>
+<div class="tech-card">HTML</div>
+<div class="tech-card">CSS</div>
+<div class="tech-card">JavaScript</div>
+<div class="tech-card">SQL</div>
+<div class="tech-card">Android Studio</div>
+<div class="tech-card">Firebase</div>
+<div class="tech-card">Streamlit</div>
+<div class="tech-card">Git</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<div class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects-grid">
+
+<!-- PROJECT 1 -->
+
+<div class="project-card">
+
+<img src="images/farmerPal.png">
+
+<h3>FarmerPal Mobile App</h3>
+
+<p>
+
+Smart farming application supporting SDG 2 with weather updates,
+soil analysis, pest detection, AI chatbot, and community features.
+
+</p>
+
+<div class="project-buttons">
+
+<a href="#">GitHub</a>
+
+</div>
+
+</div>
+
+<!-- PROJECT 2 -->
+
+<div class="project-card">
+
+<img src="images/farmerPal.png">
+
+<h3>Pokémon Battle Game</h3>
+
+<p>
+
+Java turn-based battle game implementing OOP concepts like inheritance,
+polymorphism, and encapsulation.
+
+</p>
+
+<div class="project-buttons">
+
+<a href="#">GitHub</a>
+
+</div>
+
+</div>
+
+<!-- PROJECT 3 -->
+
+<div class="project-card">
+
+<img src="images/farmerPal.png">
+
+<h3>MemeCoin Dashboard</h3>
+
+<p>
+
+Interactive dashboard built with Python and Streamlit showing real-time
+crypto data and sentiment analysis.
+
+</p>
+
+<div class="project-buttons">
+
+<a href="#">GitHub</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">Contact Me</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit" class="btn-primary">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Ilsa Tariq Want | Portfolio</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 
 </html>
