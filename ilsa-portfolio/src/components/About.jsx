@@ -4,48 +4,68 @@ export default function About(){
 
       <div className="container">
 
+        <h2 className="section-title">About Me</h2>
+
         <div className="about-grid">
 
-          {/* Flip Card */}
+          {/* IMAGE SIDE */}
           <div className="flip-card">
-
             <div className="flip-card-inner">
 
-              {/* FRONT (IMAGE) */}
               <div className="flip-card-front">
                 <img src="/images/ilsaimage.jpg" className="about-img"/>
               </div>
 
-              {/* BACK (FUN TEXT) */}
               <div className="flip-card-back">
-                <h3>Fun Facts About Me</h3>
-
+                <h3>Fun Facts</h3>
                 <p>
-                  ☕ Powered by coffee  
-                  <br/>
-                  💻 Loves building cool apps  
-                  <br/>
-                  🌱 Tech + creativity enthusiast  
-                  <br/>
-                  🚀 Future software engineer
+                  ☕ Coffee-powered coder <br/>
+                  🎨 Loves UI/UX design <br/>
+                  🌱 Builds tech that solves real problems <br/>
+                  🚀 Always learning new technologies
                 </p>
-
               </div>
 
             </div>
-
           </div>
+          
 
           {/* TEXT SIDE */}
-          <div>
+          {/* TEXT SIDE */}
+          <div className="about-content">
 
-            <h2>About Me</h2>
+            {/* EDUCATION */}
+            <div className="about-card">
 
-            <p>
-              I am a Computer Science student passionate about software
-              development, UI/UX design and building systems that solve
-              real problems.
-            </p>
+              <h3>Education</h3>
+
+              <p className="uniname-text">Universiti Malaya</p>
+
+              <p className="degree">
+                Bachelor in Computer Science (Software Engineering) <br/>
+                Oct 2023 – March 2027
+              </p>
+
+            </div>
+
+            {/* EXPERIENCE */}
+            <div className="about-card">
+
+              <h3>Experience</h3>
+
+              <p className="uniname-text">
+                Sapu (Ride-Hailing Platform)
+              </p>
+
+              <p className="degree">
+                Software Engineer &nbsp; | &nbsp; Nov 2025 – Present
+              </p>
+
+              <p className="courses">
+                Revamp the UI, Fix issues, optimize performance, and add new features to support app.
+              </p>
+
+            </div>
 
           </div>
 
