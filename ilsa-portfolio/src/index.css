@@ -9,10 +9,15 @@ box-sizing:border-box;
 }
 
 html{
+width: 100%;
+overflow-x: hidden;
 scroll-behavior:smooth;
 }
 
 body{
+
+width: 100%;
+overflow-x: hidden;
 
 background:
 
@@ -44,7 +49,11 @@ background-blend-mode:screen;
 font-family:'Space Grotesk',sans-serif;
 line-height:1.6;
 
-cursor:none;
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+}
 
 }
 
@@ -230,12 +239,16 @@ transform:translateY(-3px);
 /* SECTIONS */
 
 .container{
-width:85%;
+width:90%;
 max-width:1100px;
 margin:auto;
 padding:100px 0;
 }
-
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
 .section-title{
 text-align:center;
 font-size:42px;
@@ -316,7 +329,7 @@ line-height:1.5;
 .flip-card{
 perspective:1000px;
 width:100%;
-max-width:70%;
+max-width:100%;
 }
 
 .flip-card-inner{
@@ -589,4 +602,81 @@ background:#0f0f14;
 border-top:1px solid rgba(255,255,255,0.05);
 color:#8a8a8a;
 font-size:14px;
+}
+
+@media (max-width: 1024px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .tech-cert-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav {
+    padding: 15px 5%;
+  }
+
+  nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* ABOUT SECTION */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .flip-card {
+    max-width: 100%;
+  }
+
+  .flip-card-inner {
+    height: 300px;
+  }
+
+  /* PROJECTS */
+  .project-card img {
+    height: 200px;
+  }
+
+  /* GENERAL */
+  .section-title {
+    font-size: 30px;
+  }
 }

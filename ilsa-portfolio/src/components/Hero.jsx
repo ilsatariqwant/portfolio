@@ -17,7 +17,7 @@ export default function Hero(){
             View Projects
           </a>
 
-          <a href="/Ilsa_CV.pdf" className="btn-secondary">
+          <a href="/images/CV_ilsa.pdf" className="btn-secondary">
             Download CV
           </a>
 
